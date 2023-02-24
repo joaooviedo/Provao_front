@@ -11,6 +11,7 @@ export const ButtonLarge = styled.button`
     align-items: center;
     height: 48px;
     width: 100%;
+    box-shadow: 2px 2px 5px 0px black;
     cursor: pointer;
     font-weight: 600;
     &:disabled {

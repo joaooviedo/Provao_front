@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Home = styled.section`
+export const Register = styled.section`
   ${() => css`
     background-color: goldenrod;
     background-size: cover;
@@ -10,7 +10,7 @@ export const Home = styled.section`
   `}
 `;
 
-export const HomeContent = styled.main`
+export const RegisterContent = styled.main`
   ${() => css`
     width: 100%;
     height: 100%;

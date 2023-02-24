@@ -3,8 +3,8 @@ import styled, { css } from "styled-components";
 export const BoxLogin = styled.section`
   ${() => css`
     background: greenyellow;
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     padding: 20px 20px 35px 20px;
     margin: 20px;
     border-radius: 8px;

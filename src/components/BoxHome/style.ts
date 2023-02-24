@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components";
 
-export const BoxLogin = styled.section`
+export const BoxHome = styled.section`
   ${() => css`
     background: greenyellow;
-    width: 200px;
+    width: 300px;
     height: 300px;
     padding: 20px 20px 35px 20px;
     margin: 20px;
@@ -15,7 +15,7 @@ export const BoxLogin = styled.section`
   `}
 `;
 
-export const BoxLoginTitle = styled.div`
+export const BoxHomeTitle = styled.div`
   ${() => css`
   font-size: 35px;
     display: flex;
@@ -24,7 +24,7 @@ export const BoxLoginTitle = styled.div`
   `}
 `;
 
-export const BoxLoginTitleText = styled.h1`
+export const BoxHomeTitleText = styled.h1`
   ${() => css`
     text-transform: uppercase;
     margin: 20px 0;
@@ -36,31 +36,5 @@ export const BoxLoginTitleText = styled.h1`
     border-bottom: 1px solid;
     text-align: end;
     width: calc(50% - 10px);
-  `}
-`;
-
-export const BoxLoginForm = styled.form`
-  ${() => css`
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    input {
-      height: 48px;
-      border-radius: 8px;
-      padding: 14px;
-      background: white;
-      border: 1px solid;
-      box-sizing: border-box;
-      color: greenyellow;
-    }
-  `}
-`;
-
-export const BoxLoginError = styled.span`
-  ${() => css`
-    color: red;
-    text-align: center;
-    display: inline-block;
-    margin-top: 25px;
   `}
 `;
