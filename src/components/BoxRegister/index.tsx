@@ -1,7 +1,13 @@
 import * as S from "./style";
 import ButtonLarge from "components/ButtonLarge";
+import { HTMLAttributes } from "react";
 
-const BoxRegister = () => {
+type BoxRegisterType = HTMLAttributes<HTMLDivElement>;
+
+type BoxRegisterProps = {} & BoxRegisterType;
+
+
+const BoxRegister = ({ ...props }: BoxRegisterProps) => {
   return (
     <S.BoxLogin>
       <S.BoxLoginTitle>

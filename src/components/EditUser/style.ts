@@ -69,3 +69,42 @@ export const EditForm = styled.input`
     height: 40px;
   `}
 `;
+
+export const EditUserDetails = styled.div`
+  ${() => css`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 5px;
+  `}
+`;
+
+export const EditUserDetailsTitle = styled.h3`
+  ${() => css`
+    font-family: Barlow;
+    font-size: large;
+    line-height: 140%;
+    text-align: center;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 40px;
+    font-weight: 700;
+    margin: 0;
+  `}
+`;
+
+export const EditUserDetailsText = styled.p`
+  ${() => css`
+    font-family: Barlow;
+    font-size: large;
+    line-height: 140%;
+    text-align: center;
+    max-width: 90%;
+    font-weight: 500;
+    margin: 0;
+  `}
+`;

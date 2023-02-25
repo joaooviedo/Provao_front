@@ -25,9 +25,6 @@ const Users = () => {
               </UserItemList>
           </S.UsersUserList>
         </div>
-        <div>
-          <S.ItemLogout> Clique aqui para deslogar </S.ItemLogout>
-        </div>
       </S.UsersContent>
     </S.Users>
   );
