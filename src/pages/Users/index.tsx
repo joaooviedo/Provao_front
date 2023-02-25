@@ -1,8 +1,16 @@
+import ButtonLarge from "components/ButtonLarge";
 import ManageUsers from "components/ManageUsers";
 import UserItemList from "components/UserItemList";
+import { useNavigate } from "react-router-dom";
+import { RoutePath } from "types/routes";
 import * as S from "./style";
 
 const Users = () => {
+  const navigate = useNavigate();
+  const handleSubmit = (): void => {
+    navigate(RoutePath.MANAGEUSERS);
+  };
+
   return (
     <S.Users>
       <S.UsersContent>

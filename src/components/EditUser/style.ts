@@ -54,20 +54,25 @@ export const EditFormGroup = styled.div`
   `}
 `;
 
-export const EditForm = styled.input`
-  ${() => css`
+const EditFormMixins = {
+  error: () => css`
+    border: 2px solid black;
+  `,
+};
+
+export const EditForm = styled.input<{ error?: boolean }>`
+  ${({ error = false }) => css`
     font-family: Barlow;
     font-size: large;
     line-height: 140%;
-    height: 48px;
     border-radius: 8px;
     padding: 14px;
-    background: ;
+    background:goldenrod;
     border: 1px solid;
     box-sizing: border-box;
     color: black;
     height: 40px;
-  `}
+    `}
 `;
 
 export const EditUserDetails = styled.div`

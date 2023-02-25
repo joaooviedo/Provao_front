@@ -2,21 +2,21 @@ import * as S from "./style";
 import ButtonLarge from "components/ButtonLarge";
 import { HTMLAttributes, useState } from "react";
 
-type BoxLoginType = HTMLAttributes<HTMLDivElement>;
+type BoxLoginType =  HTMLAttributes<HTMLDivElement>
 
 export type BoxLoginProps = {
-  onSubmitData: (data: { email: string; password: string }) => void;
-  errorMessage: string;
+  onSubmitData: (data: {email: string, password: string}) => void
+  errorMessage: string
 } & BoxLoginType;
 
-const BoxLogin = ({ onSubmitData, errorMessage }: BoxLoginProps) => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+const BoxLogin = ({onSubmitData, errorMessage}: BoxLoginProps) => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-  const handleSubmit = (): void => {
-    const data = { email, password };
-    onSubmitData(data);
-  };
+    const handleSubmit = (): void => {
+        const data = {email, password};
+        onSubmitData(data);
+    }
 
   return (
     <S.BoxLogin>
